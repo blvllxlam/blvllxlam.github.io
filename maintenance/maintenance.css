@@ -1,0 +1,63 @@
+/* Maintenance notice displayed below the fixed header. */
+.maintenance-notice {
+    position: relative;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 42px;
+    padding: 9px 50px 9px 20px;
+    background: #0b1118;
+    border-bottom: 1px solid #5c4820;
+    color: #c8b98e;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.maintenance-icon {
+    flex: 0 0 auto;
+    color: #d7a943;
+    font-size: 13px;
+}
+
+.maintenance-title {
+    color: #d7a943;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.maintenance-close {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #718096;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.maintenance-close:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    .maintenance-notice {
+        justify-content: flex-start;
+        padding: 9px 48px 9px 20px;
+        text-align: left;
+    }
+
+    .maintenance-icon {
+        align-self: flex-start;
+        margin-top: 1px;
+    }
+}
